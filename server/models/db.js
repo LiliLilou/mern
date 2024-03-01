@@ -29,7 +29,9 @@ module.exports = mongoose.connect('mongodb://localhost:27017/todolist', {
 
 
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://mongo:dongo@cluster0.hzj0ftf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+// const uri = "mongodb+srv://mongo:dongo@cluster0.hzj0ftf.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = "mongodb://root:example@localhost"
+
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
